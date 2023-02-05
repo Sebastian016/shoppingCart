@@ -11,8 +11,19 @@
 <body>
     <header class="header">
         <div>Shopping Cart</div>
-        <div class="shopping-cart-btn"><i class="fa-solid fa-cart-shopping"></i></div>
-    </header>   
-    <script src="/app.js"></script>
+        <div class="shoppingCart-btn"><i class="fa-solid fa-cart-shopping"></i></div>
+    </header>  
+    <div class="itemBtn-container"> 
+        <div class="newItem">Create new Item</div>
+    </div>
+    <div class="modalWindow-container">
+        <div class="closeBtn"><i class="fa-solid fa-xmark closeBtn"></i></div>
+        <div class="inputs-container">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Price">
+        </div>
+        <div class="addBtn">Add to Cart</div>
+    </div>
+    <script src="./app.js" type="module"></script>
 </body>
 </html>

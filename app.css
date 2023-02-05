@@ -14,6 +14,59 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-.shopping-cart-btn{
+.shoppingCart-btn{
     font-size: 18px;
 }
+
+.itemBtn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.itemBtn-container .newItem{
+    padding: 1rem;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    border-radius: 4px;
+}
+
+.modalWindow-container{
+    max-width: 450px;
+    margin: 0 auto;
+    border: solid 1px #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+    display: block;
+}
+
+.modalWindow-container .closeBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.modalWindow-container .inputs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalWindow-container input{
+    padding: .8rem;
+    margin: .5rem 0rem;
+    text-align: center;
+}
+
+.modalWindow-container .addBtn{
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+
+
