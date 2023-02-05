@@ -38,16 +38,18 @@ body {
     border: solid 1px #ccc;
     padding: 1rem;
     border-radius: 4px;
-    display: block;
+    display: none;
 }
 
-.modalWindow-container .closeBtn{
+.modalWindow-container .closeBtn {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    cursor: pointer;
 }
 
+.modalWindow-container .closeBtn i{
+    cursor: pointer;
+}
 .modalWindow-container .inputs-container {
     display: flex;
     flex-direction: column;
