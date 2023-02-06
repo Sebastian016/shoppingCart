@@ -1,6 +1,6 @@
-import { Item } from "./item.js"
 
 export class ModalWindow{
+
     #container;
     #closeBtn;
     #inputName;
@@ -15,24 +15,24 @@ export class ModalWindow{
         this.#addBtn = document.querySelector(".addBtn");
     }
 
+    getCloseBtnElement(){
+        return this.#closeBtn;
+    }
+
+    getAddBtnElemen(){
+        return this.#addBtn;
+    }
+
     showModal(){
        this.#container.style.display = "block";
        this.#inputName.value = "";
        this.#inputPrice.value = "";
     }
 
-    setCloseModalWindowFn(){
-        this.#closeBtn.addEventListener("click", () => {
-            this.#container.style.display = "none";
-        })
+    closeModalWindow(){
+        this.#container.style.display = "none";
     }
 
-    setAddToCartFn(){
-        this.#addBtn.addEventListener("click", () => {
-            const data = this.getData()
-            console.log(data)
-        })
-    }
 
     getData(){
         let name = String(this.#inputName.value).trim();
@@ -50,18 +50,16 @@ export class ModalWindow{
 
     validaData(name, price){
         if(name === ""){
+            console.log("No has puesto nada en nombre");
             return false
         }
 
         if(isNaN(price)){
+            console.log("No has puesto el precio");
             return false
         }
 
         return true
     }
-    
-    
-
-    
 
 }
